@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: #150488;
+            font-weight: bolder;
+        }
+        .video-wrap{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>동영상 연습</h1>
+    <div>
+        <aside>
+            <h2>인라인의 사용법</h2>
+            <p>Lorem ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. <span>Possimus consequatur</span> minus delectus? Saepe voluptatum autem voluptates excepturi unde praesentium <span>libero ex dicta</span>. Odio magnam qui molestiae eius aliquam optio nam!</p>
+        </aside>
+    </div>
+    <!--동영상 태그-->
+    <!-- .video-wrap-->
+    <div class="video-wrap">
+        <video src="멀티미디어/imgae-multimedia/media/halongbay_320.mp4" controls autoplay muted loop></video>
+    </div>
+    <div class="video-wrap">
+        <video src="멀티미디어/imgae-multimedia/media/halongbay_320.mp4" controls muted poster="멀티미디어/imgae-multimedia/media/halongbay_320_2_Moment.jpg"></video>
+    </div>
+    <div class="video-wrap">
+        <video controls muted poster="멀티미디어/imgae-multimedia/media/halongbay_320_2_Moment.jpg">
+            <source src="멀티미디어/imgae-multimedia/media/halongbay_320.asf">
+            <source src="멀티미디어/imgae-multimedia/media/halongbay_320.mp4">
+            <p>지원되지 않는 브라우저 입니다.</p>
+        </video>
+        </div>
+    <div>
+        <h4>동영상 넣을때 주의 사항</h4>
+        <ul>
+            <li>모든 브라우저에서 autoplay가 안됨</li>
+            <li><span>muted</span>를 입력하는 조건으로 <span>autoplay가 가능</span>하게 됨.</li>
+            <li><span>muted</span>를 입력하는 조건으로 <span>loop가 가능</span>하게 됨.</li>
+            <li>playsinlin : 풀스크린 대신 inline으로...</li>
+        </ul>
+        <p>src대신source로 대체가 가능함</p>
+    </div>
+</body>
+</html>
