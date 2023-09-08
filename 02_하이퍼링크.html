@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>하이퍼 링크</h1>
+    <p>web에서 사용되는 참고할 정보가 있는 주소를 포함하고 있는 미디어(텍스트,이미지)</p>
+    <!--
+        acchor
+        hypertext reference
+
+        형식
+        <a href="url" title="태그제목">화면표시텍스트</a>
+        <a href="url" target="_self">화면표시텍스트</a> -- 설정하지 않으면 기본 값
+        <a href="url" target="_blank">화면표시텍스트</a> -- 새창으로 띄우기
+
+
+        url 프로토콜://도메인/경로/파일명.확장자
+    -->
+    <a href="http://www.naver.com">네이버 바로가기</a>
+    <a href="http://www.google.co.kr/?h1=ko">구글 바로가기</a>
+    <a href="http://www.google.co.kr/?h1=ko" target="_blank">구글 바로가기</a>
+    <a href="tel:010-6741-5246">전화 : 010-6741-5246</a>
+-
+    <!-- 
+        인라인 요소에서 블록요소 사용 하면 안됨.
+        다만 <a>태그, <img>태그의 경우 예외
+        -->
+
+    <!--
+        <a href="tel:" >모바일에서 가능하고 안드로이드에서는 꼭 설정해줘야함</a>
+    -->
+</body>
+</html>

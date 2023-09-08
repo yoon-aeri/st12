@@ -1,0 +1,20 @@
+01. Git 최초 설정(Git 설치후 설정해야 하는 정보)
+
+사용자 정보 설정
+git config --global user.name "윤애리"
+git config --global user.email "aeri1030@gmail.com"
+
+기본 편집기 설정
+git config --global core.editor "code --wait"
+
+기본 브랜치명 main으로 설정
+git config --global init.defaultBranch main
+
+설정된 정보 보기
+git config --list
+
+02. 비주얼 스튜디오 코드에서 입력 하는 법
+    1. [보기] > [터미널] 
+    2. 또는 단축키 Ctrl + '
+    3. 터미널 패널창에서 powershell로 되어 있는 것을 Git bash로 변경
+    4. powershell 버튼 옆에 드롭다운 메뉴로 되어 있는 것을 펼치면 리스트가 나옴 그중에서 Git bash로 선택하면 됨
