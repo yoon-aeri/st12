@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main연습</title>
+</head>
+<style>
+    body{
+        font-size: 14px; /*0.875em 87.5% 11pt*/
+        color: #f00;
+    }
+    .title{
+        font-weight: 600; font-size: 24px; color: blue;
+    }
+    .box{
+        font-size: 13px; color: black;
+    }
+</style>
+<body>
+   <div class="warp">
+        <!-- .main>#section$.container$*2>.inner>.title+.desc*2>.box>p*2 -->
+        <div class="main">
+            <div id="section1" class="container1">
+                <div class="inner">
+                    <div class="title"></div>
+                    <div class="desc">
+                        <div class="box">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="box">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="container2">
+                <div class="inner">
+                    <div class="title"></div>
+                    <div class="desc">
+                        <div class="box">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="box">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="warp">
+        <!-- #section$.container*2>.inner>(.title>{제목})+.desc>.box*2>lorem6 -->
+        <div id="section1" class="container">
+            <div class="inner">
+                <div class="title"></div>
+                <div class="desc">
+                    <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="box">Dolor dignissimos quod eveniet voluptatem rerum.</div>
+                </div>
+            </div>
+        </div>
+        <div id="section2" class="container">
+            <div class="inner">
+                <div class="title"></div>
+                <div class="desc">
+                    <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="box">Error enim ipsa quisquam suscipit dignissimos?</div>
+                </div>
+            </div>
+        </div>
+    <footer></footer>
+</body>
+</html>
