@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxmodel3 - boxmodel 계산법</title>
+  <style>
+   *{margin:0; padding:0;}  
+   .box{
+    /* auto(lb) + 10(lb) + 50(lp)+400(width) + 50(rp) + 10(rb) + auto(rm) */
+
+    width:400px;
+    height: 300px;
+    padding:50px;
+    border:10px solid #f86;
+    margin:50px auto;/*block 가운데정렬*/
+    background-color: #333;
+    color:#fff;
+   } 
+
+   .box1{
+    box-sizing: content-box;
+    /* content-box 기본값 */
+   }
+   
+   .box2{
+    box-sizing: border-box;
+    /* box-sizing은 박스모델 계산법을 지정 *
+    width/height 지정값이 
+     박스모델 content영역지정  ->기본값 -contet-box
+     박스모델  border+padding+content  -> border-box
+    width 선언된 값은 border+padding+content 
+    */
+   }
+
+  </style>
+</head>
+<body>
+  <!-- .wrap -->
+  <div class="wrap">
+    <!-- .box.box$*2>lorem*2 -->
+    <div class="box box1">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, at est natus, maiores aspernatur, placeat ducimus cupiditate nisi nesciunt atque dolorem nam. Nostrum dolor laudantium ducimus distinctio error corporis numquam.</div>
+      <div>Molestiae, error. Facere, sequi illum incidunt distinctio inventore sint fugiat numquam odio quo totam? Non accusantium hic amet eum architecto aspernatur quibusdam voluptas impedit cum, quos reiciendis, sunt, voluptatibus obcaecati.</div>
+    </div>
+    <div class="box box2">
+      <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolorem accusantium molestiae quaerat exercitationem voluptates facilis quam vel animi perferendis alias, odit ad explicabo quisquam similique aperiam veniam iusto! Cumque!</div>
+      <div>Porro dolorem molestias tempora quibusdam, deserunt unde, expedita asperiores aperiam doloribus odio quasi dolore eligendi autem perspiciatis optio sequi quisquam assumenda, et ipsa voluptatibus laudantium amet? Dicta quia at alias!</div>
+    </div>
+    
+
+  </div>
+  <!-- //.wrap -->
+   
+</body>
+</html>
