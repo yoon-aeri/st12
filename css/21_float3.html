@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <title>float3-2단레이아웃</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body,
+        div,
+        span,
+        h1{
+            margin: 0; padding: 0;
+        }
+        body{
+            /*
+            font-family: 'Raleway','noto sans KR','sans-serif';
+            font-size: 14px;
+            color: #000;
+            line-height: 1.4;*/
+            font:14px/1.4 'Raleway','noto sans KR','sans-serif';
+            color: #000;            
+        }
+        .banner-wrap{ /*부모의 콘테츠 영역을 다 사용*/
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .banner-wrap .left{
+            width: 60%;
+            background-image: url(../background/images/main-banner01.jpg);
+            background-repeat: no-repeat;
+            background-position: 100% center;
+            /* 또는 background-position-x: ;
+                    background-position-y: ; */     
+            background-size: cover;
+            border-radius: 0 250px 250px 0;      
+            height: 500px;
+        }
+        .banner-wrap .right{
+            width: 40%;
+            padding-left: 100px;
+        }
+        .banner-wrap .right > span{
+            display: block;            
+        }
+        .banner-wrap .right .text1{
+            font-size: 18px;
+            letter-spacing: 4px;
+            margin-top: 150px;
+        }
+        .banner-wrap .right .text2{
+            font-size: 100px;
+            font-weight: 700;
+            letter-spacing: -3px;
+        }
+        .banner-wrap .right .text2 span{ 
+            font-size: 50px;
+            font-weight: 900;            
+            letter-spacing: -5px;
+            padding-right: 10px;
+            display: inline;
+        }
+        .banner-wrap .right .text3{
+            font-size: 20px;            
+            border: 1px solid #000;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .banner-wrap .right .text3 a{
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            padding: 10px 20px;
+            display: block;
+        }
+        .banner-wrap .right .text3 a:hover{
+            background-color: #000; 
+            color: #fff;                       
+        }
+        /* 단처리 css*/
+        .banner-wrap .left{
+            float: left;
+        }
+        .banner-wrap .right{
+            float: left;
+        }
+        /* float지정 즉 단요소의 부모가 단요소(자식요소)를 인식하게 부모에게 overflow:hidden;*/
+        .banner-wrap{
+            overflow: hidden;
+        }
+        /*float지정 한 요소의 뒤에 작성된 요소들에게 float에 영향을 받지 않게 설정*/
+        .banner-wrap::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>float 연습</h1>
+    <div class="sample">
+        그래놀라 오곡푸레이즈가 들어간 크랜베리 아몬드. 글로벌 1위 시리얼 기업
+    </div>
+    <div class="banner-wrap">
+        <div class="left"></div>
+            <div class="right">
+                <span class="text text1">Runway items season off</span>
+                <span class="text text2">30<span>%</span></span>
+                <span class="text text3"><a href="#">Shop Now</a></span>
+            </div>
+    </div>
+</body>
+</html>
